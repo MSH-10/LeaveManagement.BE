@@ -9,16 +9,23 @@ The purpose of adopting a clean architecture for this Leave Management API is to
 - ``API Layer``: Exposes RESTful endpoints for interacting with the Leave Management system.
 - ``Core Layer``: Contains the business logic, domain entities, DTOs, interfaces, and services.
 - ``Infrastructure Layer``: Handles data access, including database repositories, EF Core configurations, and migrations.
-
+- ``Tests``: The project includes unit tests written using xUnit to test various components such as controllers, services, and utility methods.
 ### Technologies Used:
 - ``Swagger``: Integrated for API documentation, providing a user-friendly interface to explore and test endpoints.
 - ``AutoMapper``: Used for mapping between domain entities and DTOs, reducing manual mapping efforts.
 - ``EF Core``: Employs Entity Framework Core for database interactions, including migrations for database schema changes.
 - ``CORS``: Configured for API security, allowing controlled access to API resources from different origins.
 - ``Async/Await``: Utilized extensively for asynchronous programming, enhancing performance by leveraging non-blocking operations.
+- ``Attribute-based Validations``: to enforce data integrity and ensure that incoming requests meet the required criteria.
 - ``Exception Handling``: (in progress) Implements robust exception handling strategies to ensure graceful error handling and application stability.
+### Testing:
+- ``Unit Testing with xUnit``: The project includes unit tests written using xUnit to test various components such as controllers, services, and utility methods.
+- ``Mocking with Moq``: Moq is used to mock dependencies and isolate the units under test, facilitating efficient and focused unit testing.
+- ``Test Data Generation``: Test data is generated dynamically or using predefined data to cover different scenarios and edge cases in the application logic.
+- ``Integration Testing``: (in progress) Integration tests are planned to be implemented to test the interaction between different layers and components of the application.
+- ``Test Coverage``: Efforts are made to achieve high test coverage to ensure comprehensive testing of the application's functionality and behavior.
 
-## Getting Started
+## Getting Started / Project Setup
 To get started with the API, follow these steps:
 
 - Clone this repository to your local machine:
