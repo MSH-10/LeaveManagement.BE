@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LeaveManagement.Core.CustomeAttributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace LeaveManagement.Core.Entities
 {
     public class LeaveApplication : BaseEntities, ITrackableEntities
     {
+        [ManagerUserValidator]
         public Guid ApplicantUserId { get; set; }
         public Guid ManagerId { get; set; }
         public DateTime StartDate { get; set; }

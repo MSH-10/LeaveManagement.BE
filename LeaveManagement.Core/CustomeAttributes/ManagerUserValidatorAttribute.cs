@@ -20,6 +20,7 @@ namespace LeaveManagement.Core.CustomeAttributes
                 return new ValidationResult("Manager and User cannot be the same.");
             }
 
+            // Return ValidationResult.Success to indicate successful validation
             return ValidationResult.Success;
         }
     }
