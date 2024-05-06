@@ -77,11 +77,11 @@ By restricting CORS to specific origins, the API ensures that only trusted front
 For detailed request and response formats, refer to the Swagger documentation.
 
 ### Users API Endpoints:
-GET ``/api/v1/users`` - Get all users
-GET ``/api/v1/users/{id}`` - Get user by ID
-POST ``/api/v1/users`` - Add a new user
-PUT ``/api/v1/users/{id}`` - Update user by ID
-DELETE ``/api/v1/users/{id}`` - Delete user by ID
+- GET ``/api/v1/users`` - Get all users
+- GET ``/api/v1/users/{id}`` - Get user by ID
+- POST ``/api/v1/users`` - Add a new user
+- PUT ``/api/v1/users/{id}`` - Update user by ID
+- DELETE ``/api/v1/users/{id}`` - Delete user by ID
 
 ### Contributing:
 Contributions to the Leave Management API solution are welcome! Feel free to fork the repository, make changes, and submit pull requests for review.
