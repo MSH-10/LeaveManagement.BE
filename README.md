@@ -6,9 +6,9 @@ The purpose of adopting a clean architecture for this Leave Management API is to
 
 ### The architecture follows these main layers:
 
-- API Layer: Exposes RESTful endpoints for interacting with the Leave Management system.
-- Core Layer: Contains the business logic, domain entities, DTOs, interfaces, and services.
-- Infrastructure Layer: Handles data access, including database repositories, EF Core configurations, and migrations.
+- ``API Layer``: Exposes RESTful endpoints for interacting with the Leave Management system.
+- ``Core Layer``: Contains the business logic, domain entities, DTOs, interfaces, and services.
+- ``Infrastructure Layer``: Handles data access, including database repositories, EF Core configurations, and migrations.
 
 ### Technologies Used:
 - ``Swagger``: Integrated for API documentation, providing a user-friendly interface to explore and test endpoints.
@@ -43,7 +43,7 @@ Once the API is running, navigate to ``https://localhost:7026/swagger`` in your 
 
 ### CORS Configuration
 
-The Leave Management API is configured to allow Cross-Origin Resource Sharing (CORS) for security purposes. CORS allows controlled access to API resources from different origins. In this project, CORS is configured to only allow requests from http://localhost:4200, which is the default port for Angular applications during development.
+The Leave Management API is configured to allow Cross-Origin Resource Sharing (CORS) for security purposes. CORS allows controlled access to API resources from different origins. In this project, CORS is configured to only allow requests from ``http://localhost:4200``, which is the default port for Angular applications during development.
 
 #### To modify CORS settings:
 
@@ -67,13 +67,21 @@ By restricting CORS to specific origins, the API ensures that only trusted front
 - Run the EF Core migration commands (dotnet ef migrations add InitialMigration, dotnet ef database update) to apply database migrations and create the database schema.
 - Build and run the API project to start the application.
 - Access the Swagger documentation at [https://localhost:7026/]/swagger to view and test the API endpoints.
-### API Endpoints:
-- GET /api/leaveapplications: Retrieves all leave applications.
-- GET /api/leaveapplications/{id}: Retrieves a leave application by ID.
-- POST /api/leaveapplications: Creates a new leave application.
-- PUT /api/leaveapplications/{id}: Updates a leave application by ID.
--DELETE /api/leaveapplications/{id}: Deletes a leave application by ID.
+
+### LeaveManagement API Endpoints:
+- GET ``/api/v1/leaveapplications``: Retrieves all leave applications.
+- GET ``/api/v1/leaveapplications/{id}``: Retrieves a leave application by ID.
+- POST ``/api/v1/leaveapplications``: Creates a new leave application.
+- PUT ``/api/v1/leaveapplications/{id}``: Updates a leave application by ID.
+- DELETE ``/api/v1/leaveapplications/{id}``: Deletes a leave application by ID.
 For detailed request and response formats, refer to the Swagger documentation.
+
+### Users API Endpoints:
+GET ``/api/v1/users`` - Get all users
+GET ``/api/v1/users/{id}`` - Get user by ID
+POST ``/api/v1/users`` - Add a new user
+PUT ``/api/v1/users/{id}`` - Update user by ID
+DELETE ``/api/v1/users/{id}`` - Delete user by ID
 
 ### Contributing:
 Contributions to the Leave Management API solution are welcome! Feel free to fork the repository, make changes, and submit pull requests for review.
