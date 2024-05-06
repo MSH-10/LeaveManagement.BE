@@ -1,4 +1,5 @@
-﻿using LeaveManagement.Core.DTOs;
+﻿using LeaveManagement.Core.CustomeAttributes;
+using LeaveManagement.Core.DTOs;
 using LeaveManagement.Core.Entities;
 using System.ComponentModel.DataAnnotations;
 
@@ -6,6 +7,7 @@ namespace LeaveManagement.Core.DTOs
 {
     public class LeaveApplicationDto : BaseEntitiesDto, ITrackableEntities
     {
+        [ManagerUserValidator]
         [Required(ErrorMessage = "Applicant User ID is required")]
         public Guid ApplicantUserId { get; set; }
 

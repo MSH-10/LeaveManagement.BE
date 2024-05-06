@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement.API", "LeaveManagement.API\LeaveManagement.API.csproj", "{F1E81B32-D855-451E-A7C6-BC63EF62A545}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement.API", "LeaveManagement.API\LeaveManagement.API.csproj", "{F1E81B32-D855-451E-A7C6-BC63EF62A545}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement.Core", "LeaveManagement.Core\LeaveManagement.Core.csproj", "{F8854EB7-916C-4A87-970B-5213D8173D65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement.Core", "LeaveManagement.Core\LeaveManagement.Core.csproj", "{F8854EB7-916C-4A87-970B-5213D8173D65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement.Infrastructure", "LeaveManagement.Infrastructure\LeaveManagement.Infrastructure.csproj", "{B0024983-6861-4B3F-8E82-B4F59B849296}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement.Infrastructure", "LeaveManagement.Infrastructure\LeaveManagement.Infrastructure.csproj", "{B0024983-6861-4B3F-8E82-B4F59B849296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement.Tests", "LeaveManagement.Tests\LeaveManagement.Tests.csproj", "{A8B62A96-91AF-423B-B8AF-B5E16975DF9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{B0024983-6861-4B3F-8E82-B4F59B849296}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0024983-6861-4B3F-8E82-B4F59B849296}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0024983-6861-4B3F-8E82-B4F59B849296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B62A96-91AF-423B-B8AF-B5E16975DF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B62A96-91AF-423B-B8AF-B5E16975DF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B62A96-91AF-423B-B8AF-B5E16975DF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B62A96-91AF-423B-B8AF-B5E16975DF9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
